@@ -24,17 +24,21 @@ import { MatInputModule } from '@angular/material/input'
 })
 export class TodoFormsComponent {
  private todoSignalsService = inject(TodoSignalsService)
- private allTodos = this.todoSignalsService.todoState();
+ public allTodos = this.todoSignalsService.todoState();
 
- private todosForm = new FormGroup({
+  public todosForm = new FormGroup({
     title: new FormControl('', [Validators.required, Validators.minLength(3)]),
     description: new FormControl('', [Validators.required,Validators.minLength(5)]),
  })
 
- private handleCreateNewTodo(): void {
+  public handleCreateNewTodo(): void {
   if (this.todosForm.value && this.todosForm.valid) {
     const title = String(this.todosForm.controls['title'].value)
     const description = String(this.todosForm.controls['description'].value)
+    const id = this.allTodos.length > 0 ? this.allTodos.length + 1 : 1;
+    const done = false;
+
+    this.todoSignalsService.updateTodos({id,title,description,done})
   }
  }
 }
