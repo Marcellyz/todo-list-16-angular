@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './componets/header/header.component';
+import { TodoCardComponent } from './componets/todo-card/todo-card/todo-card.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, HeaderComponent],
+  imports: [CommonModule, HeaderComponent,TodoCardComponent],
   templateUrl: './app.component.html',
   styleUrls: []
 })
