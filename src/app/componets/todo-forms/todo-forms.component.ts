@@ -49,7 +49,7 @@ export class TodoFormsComponent {
  }
 
  public handCloseModal(): void {
-  this.dialogRefService.close()
+  this.dialogRefService.close();
  }
 
 }

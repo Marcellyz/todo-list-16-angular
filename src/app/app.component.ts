@@ -7,7 +7,7 @@ import { HeaderComponent } from './componets/header/header.component';
   standalone: true,
   imports: [CommonModule, HeaderComponent],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: []
 })
 export class AppComponent {
   title = 'todo-list-16';
