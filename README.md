@@ -1,27 +1,98 @@
-# TodoList16
+# Todo List Angular 16  ✅✨📝
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
+Este é um projeto Angular, versão 16.1.0 .Ele consiste em uma lista de tarefas, onde é possível adicionar tarefas, verificar as tarefas concluidas e ainda as que estão em andamento. Foi utilizado LocalStorage para guardar as informações das tarefas.
 
-## Development server
+## 📍Stack utilizada
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<div> 
+  
+  <img align="inline_block" alt="html5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+  <img align="inline_block" alt="saas" src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"/>
+  <img align="inline_block" alt="angular" src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white"/>
+  <img align="inline_block" alt="typescript" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"/>
+</div>
 
-## Code scaffolding
+## 📦 Estrutura do Projeto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+src/
+├── app/
+│   ├── components/
+│   │   ├── header/
+│   │   ├── todo-card/
+│   │   └── todo-forms/
+│   │ 
+│   ├── models/
+│   │   ├── enum/
+│   │   └── model/
+|   |
+│   ├── services/
+│   │  
+│   └── ... (demais diretórios e arquivos)
+├── assets/
+└── ... (demais diretórios e arquivos)
+```
 
-## Build
+##  📋 Pré-requisitos
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Antes de começar, certifique-se de ter o seguinte instalado em seu ambiente:
 
-## Running unit tests
+- Node.js (versão 18.x ou superior)
+- npm (geralmente instalado junto com o Node.js)
+- Angular CLI  versao 16 (ferramenta do Angular para criar componentes, classes e etc.)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🔧 Instalação
 
-## Running end-to-end tests
+Siga os passos abaixo para configurar o projeto em sua máquina local.
+### 1. Clone o repositório
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Clone este repositório usando o comando:
 
-## Further help
+```bash
+git clone https://github.com/Marcellyz/todo-list-16-angular.git
+```
+### 2. Navegue até o diretório do projeto
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+cd todo-list-16-angular
+````
+
+### 3. Instale as dependências
+
+Use o npm para instalar as dependências necessárias:
+
+```bash
+npm install
+````
+ou 
+```bash
+npm i 
+````
+
+### 4. Iniciar a aplicação localmente
+
+Para rodar a aplicação localmente em um servidor de desenvolvimento, execute:
+
+```bash
+ng serve
+```
+Abra o navegador e acesse http://localhost:4200/ (o porto pode variar). A aplicação será recarregada automaticamente sempre que houver mudanças nos arquivos do projeto.
+
+## ⚙️ Build
+
+Para criar uma versão de produção otimizada do projeto, use o comando:
+
+```bash
+ng build
+````
+Os arquivos gerados estarão no diretório dist/. Você pode usar esses arquivos para hospedar a aplicação em um servidor web.
+
+## 🖇️ Contribuição ❤️💡📝🤩
+
+Contribuições são bem-vindas!❤️💡
+
+Esse README pode ser ajustado de acordo com as necessidades específicas do seu projeto.
+
+---
+⌨️ com ❤️ por [Marcellyz](https://gist.github.com/Marcellyz) 😊
+
